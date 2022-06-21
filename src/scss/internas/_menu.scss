@@ -1,0 +1,16 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.contenido-menu{
+
+  @include m.tablet {
+    @include m.grid(2, v.$separacion);
+  }
+
+  .texto{
+
+    p{
+      font-size: 2rem;
+    }
+  }
+}
